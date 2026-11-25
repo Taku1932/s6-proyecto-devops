@@ -1,0 +1,27 @@
+
+# Archivos de control de versiones
+.git
+.github
+
+# Configuraciones de editores
+.vs
+.vscode
+
+# Variables de entorno
+.env
+.env.*
+
+# Evidencias del proyecto
+evidencias/
+
+# Archivos temporales de Python
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+
+# Entornos virtuales
+**/venv/
+**/.venv/
+
+# Registros de ejecucion
+**/*.log

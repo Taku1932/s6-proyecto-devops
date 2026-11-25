@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Documentos Administrativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="brand">GESTIÓN DOCUMENTAL</span>
+            <h1>Portal de Documentos Administrativos</h1>
+            <p>Plataforma de consulta y control documental</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="dashboard">
+            <article class="card">
+                <h3>Estado del servicio</h3>
+                <span id="service-status" class="status">
+                    Verificando...
+                </span>
+            </article>
+
+            <article class="card">
+                <h3>Documentos disponibles</h3>
+                <strong id="total-documentos">0</strong>
+            </article>
+
+            <article class="card">
+                <h3>Categorías disponibles</h3>
+                <strong id="total-categorias">0</strong>
+            </article>
+        </section>
+
+        <section class="catalogo">
+            <div class="section-header">
+                <div>
+                    <h2>Catálogo de documentos</h2>
+                    <p>Consulta de documentos administrativos.</p>
+                </div>
+
+                <button id="actualizar">
+                    Actualizar catálogo
+                </button>
+            </div>
+
+            <div class="filters">
+                <div>
+                    <label for="buscar">Buscar documento</label>
+                    <input type="search" id="buscar"
+                           placeholder="Nombre del documento...">
+                </div>
+
+                <div>
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria">
+                        <option value="">Todas las categorías</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="mensaje" role="status">
+                Cargando documentos...
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Documento</th>
+                            <th>Categoría</th>
+                            <th>Versión</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-documentos"></tbody>
+                </table>
+            </div>
+
+            <p id="ultima-actualizacion"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        Proyecto DevOps | Semana 6 | IACC
+        <p>Entorno simulado de gestión documental</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
