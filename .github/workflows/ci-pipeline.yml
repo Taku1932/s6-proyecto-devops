@@ -19,7 +19,7 @@ jobs:
     steps:
       # Descargar el codigo del repositorio
       - name: Checkout del repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Preparar las variables de entorno
       - name: Configurar entorno
